@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>login</title>
-<link rel="stylesheet" href="lwan.css">
-</head>
-<body>
-    <div class="login">
-        <h1>Login</h1>
-        <form method="post">
-            <input type="text" name="u" placeholder="Username" required="required" />
-            <input type="password" name="p" placeholder="Password" required="required" />
-            <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
-        </form>
-    </div>
-</body>
+    <head>
+    <title>login</title>
+    <link rel="stylesheet" href="lwan.css">
+    </head>
+    <body>
+        <div class="login">
+            <h1>Login</h1>
+            <form method="post">
+                <input type="text" name="u" placeholder="Username" required="required" />
+                <input type="password" name="p" placeholder="Password" required="required" />
+                <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+            </form>
+        </div>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDTHUvq2rINBiGFjoC-uKRI2qkwxe2Ncls",
+            authDomain: "esparta-9e6a8.firebaseapp.com",
+            databaseURL: "https://esparta-9e6a8.firebaseio.com",
+            projectId: "esparta-9e6a8",
+            storageBucket: "esparta-9e6a8.appspot.com",
+            messagingSenderId: "935671184992",
+            appId: "1:935671184992:web:9a94355986606c2c3d8d05",
+            measurementId: "G-6D57CVQX38"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        </script>
+    </body>
 </html>
